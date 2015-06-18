@@ -4,14 +4,12 @@
 #include <dspxx.h>
 
 template<typename float_type>
-class iirfilter {
+class iirfilter: filter<float_type>
+{
 public:
-	void processSamples(size_t n_samples, float_type * buffer) {
-		
-	};
-	float_type * state;
-	float_type * nominator_coefficients;
-	float_type * denominator_co;
+    float_type * state;
+    float_type * nominator_coefficients;
+    float_type * denominator_co;
 };
 
 #endif

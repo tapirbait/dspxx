@@ -39,4 +39,4 @@ clean:
 	$(RM) $(OBJS_TEST)
 
 beautify:
-	astyle  --style=allman --recursive  $(SRCS) $(DEPS_ALL) $(SRCS_TEST)
+	astyle  --style=allman   $(SRCS) $(DEPS_ALL) $(SRCS_TEST)
